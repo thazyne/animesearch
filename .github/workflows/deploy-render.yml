@@ -1,0 +1,23 @@
+name: CI Test
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install dependencies
+        run: |
+          cd app
+          npm install
+      - name: Run lint
+        run: |
+          cd app
+          npm run lint || true
+      - name: Run build
+        run: |
+          cd app
+          npm run build
