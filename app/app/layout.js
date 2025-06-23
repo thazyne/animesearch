@@ -1,8 +1,8 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Jikan NextJS App",
-  description: "Cari anime favoritmu dengan Jikan API dan Next.js",
+  title: "Search Anime",
+  description: "cari anime favoritmu disini",
 };
 
 export default function RootLayout({ children }) {
